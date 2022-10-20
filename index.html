@@ -12,19 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
         font-family: "Montserrat", sans-serif;
-        background-color: #F6F9FB;
       }
       ul > li > a:hover {
         color: #f5f5f5;
-      }
-      a{
-        text-decoration: none;
-      }
-      a:hover{
-        color: orange;
       }
     </style>
   </head>
@@ -37,7 +31,7 @@
       <div class="container-fluid">
         <div class="rounded-3">
           <a class="navbar-brand text-light" href="index.html"
-            ><span class="bg-light px-2 py-1 rounded-1" style="color: #16678a"
+            ><span class="bg-white px-2 py-1 rounded-1" style="color: #16678a"
               >Tanya</span
             >
             Dokter</a
@@ -68,8 +62,8 @@
               </li>
             </ul>
           </div>
-          <form class="d-flex">
-            <input
+          <form id="form" class="d-flex">
+            <input id="search"
               class="form-control form-control-sm rounded-3 me-3 h-25"
               type="search"
               placeholder="  Search article here..."
@@ -79,20 +73,93 @@
         </div>
       </div>
     </nav>
-    <br />
-    <br />
-    <br />
-
     <!-- Navbar End -->
 
     <!-- Content Start -->
-    <div class="container-fluid">
-      <div class="bg-transparent m-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit
-        facere magni accusantium. Numquam rerum saepe deserunt quia. Qui ex quae
-        sint, consectetur nam quod alias excepturi quidem odit asperiores?
+    <section id="beranda">
+      <div
+        class="masthead"
+        style="
+          background-image: url('./img/beranda/health-still-life-with-copy-space\ \(1\).jpg');
+        "
+      >
+        <div
+          class="color-overlay d-flex justify-content-left align-items-center"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="banner_desc">
+                  <h1 class="title">
+                    Konsultasi online dengan mudah dimanapun dan kapanpun
+                  </h1>
+                  <button class="btn bg-primary" type="button">
+                    Mulai Konsultasi
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
+      <h4 class="mt-4 mb-3">
+        <center>Mengapa memilih konsultasi online ?</center>
+      </h4>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 info-panel">
+            <div class="row">
+              <div class="col-md">
+                <img src="./img/beranda/jam.png" alt="jam" />
+                <h6>24 Hours</h6>
+                <p>Mendapatkan pelayanan 24 jam</p>
+              </div>
+
+              <div class="col-md">
+                <img src="./img/beranda/laptop.png" alt="jam" />
+                <h6>Akses Mudah</h6>
+                <p>Dapat Diakses menggunakan laptop, tablet, handphone</p>
+              </div>
+
+              <div class="col-md">
+                <img src="./img/beranda/file.png" alt="jam" />
+                <h6>Resep Dokter</h6>
+                <p>Mendapatkan resep langsung dari dokter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h4 class="mt-5 mb-3"><center>Alur Pelayanan</center></h4>
+        <div class="row justify-content-left">
+          <div class="col-lg-10 layanan">
+            <div class="row">
+              <div class="col-sm">
+                <img src="./img/beranda/login.png" alt="person" />
+                <p>Masuk atau daftarkan akun terlebih dahulu</p>
+              </div>
+
+              <div class="col-sm">
+                <img src="./img/beranda/search.png" alt="search dokter" />
+                <p>Cari dokter yang sesuai dengan kondisi kamu</p>
+              </div>
+
+              <div class="col-sm">
+                <img src="./img/beranda/calender.png" alt="calender" />
+                <p>Atur jadwal dan berkonsultasi dengan dokter via chat</p>
+              </div>
+
+              <div class="col-sm">
+                <img src="./img/beranda/file.png" alt="paper"/>
+                <p>Dapatkan resep obat dari dokter </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <br />
     <!-- Content End -->
 
     <!-- Footer Start -->
@@ -104,7 +171,7 @@
         <div class="my-auto">
           <div class="rounded-3">
             <a class="text-light text-decoration-none" href="#"
-              ><span class="bg-light px-2 py-1 rounded-1" style="color: #16678a"
+              ><span class="bg-white px-2 py-1 rounded-1" style="color: #16678a"
                 >Tanya</span
               >
               Dokter</a

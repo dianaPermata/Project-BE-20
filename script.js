@@ -1,3 +1,1 @@
-let name ='be20'
-
-console.log(name);
+let name
