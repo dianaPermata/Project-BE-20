@@ -19,6 +19,10 @@ h1{
   background-color: rgba(0,0,0,0.2);
 }
 
+.cari{
+    margin-top: 80px;
+}
+
 .info-panel{
     box-sizing: 0 3px 20px rgba(0,0,0,0.5);
     justify-content: center;
