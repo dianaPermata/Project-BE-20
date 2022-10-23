@@ -29,7 +29,7 @@ const getDataArticles = async (URL) => {
           <p class="text-black-50">${item.kategori}, ${item.tanggal}</p>
           <p class="text">${item.isi_artikel1}</p>
           <div>
-            <div class="more label"><a href="#">Read more</a></div>
+            <div class="more label"><a href="./isi-artikel.html">Read more</a></div>
           </div>
           <hr />
         </div>
@@ -50,9 +50,9 @@ const getSearchArticles = async (URL) => {
         <hr />
         <div class="span8 d-flex">
           <div class="w-100">
-            <a href=""><b>${item.judul}</b>
+            <a href="./isi-artikel.html"><b>${item.judul}</b>
           </a>
-            <p><a href=""><span>Tanyadokter.com,</span></a><p class="text">${item.isi_artikel1}</p></p>
+            <p><a href="./index.html"><span>Tanyadokter.com,</span></a><p class="text">${item.isi_artikel1}</p></p>
             <hr>
           </div>
         </div>`;
