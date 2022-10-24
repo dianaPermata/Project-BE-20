@@ -4,7 +4,6 @@ const inputSearch = document.querySelector("#search");
 const form = document.querySelector("#form");
 const API_URL = "https://634d5f1bf5d2cc648ea441d9.mockapi.io/articles";
 
-
 // Article List Start
 const getDataArticles = async (URL) => {
   const response = await fetch(URL);
