@@ -1,12 +1,8 @@
-//get id from url
-let url = new URL(window.location.href);
-let id = url.searchParams.get("id");
-console.log(id);
+sole.log(id);
 //fetch data from api with id
 let containerArtikel = document.getElementById("main");
 let getDataArtikel = async (result, index) => {
-  let response = await fetch(
-    "https://634d5f1bf5d2cc648ea441d9.mockapi.io/articles/" + id);
+  let response = await fetch("https://634d5f1bf5d2cc648ea441d9.mockapi.io/articles/" + id);
   let artikel = await response.json();
   containerArtikel.innerHTML += `
             <h2>${artikel.judul}</h2>
