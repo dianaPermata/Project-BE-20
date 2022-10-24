@@ -1,3 +1,4 @@
+sole.log(id);
 //fetch data from api with id
 let containerArtikel = document.getElementById("main");
 let getDataArtikel = async (result, index) => {
