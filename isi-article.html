@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <script src="./script.js" defer></script>
+    <title>Article</title>
+    <script src="./isi-artikel.js" defer></script>
     <script src="js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
@@ -22,6 +22,25 @@
       p{
         font-size: 10px;
         margin: 10px 20px 20px;
+      }
+      .text {
+        display: block;
+        width: 800px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: Ellipsis;
+      }
+      @media screen and (max-width:680px){
+        .text {
+        display: block;
+        width: 400px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: Ellipsis;
+      }
+      #img{
+        display: none;
+      }
       }
     </style>
   </head>
@@ -65,9 +84,10 @@
               </li>
             </ul>
           </div>
-          <form class="d-flex">
+          <form class="d-flex" id="form">
             <input
               class="form-control form-control-sm rounded-3 me-3 h-25"
+              id = "search"
               type="search"
               placeholder="  Search article here..."
               aria-label="Search"
@@ -83,9 +103,9 @@
     <!-- Navbar End -->
 
     <!-- Content Start -->
-    <div id="main">
+    <div id="main" class="search-list container-fluid">
     </div>
-    <script src="./isi-artikel.js"></script>
+
     <!-- Content End -->
 
     <!-- Footer Start -->
@@ -108,9 +128,9 @@
         <div class="me-3">
           <p class="">Follow kami di</p>
           <div class="d-flex justify-content-between">
-            <a href=""><img src="./img/instagram.png" width="20" alt="" /></a>
-            <a href=""><img src="./img/facebook.png" width="20" alt="" /></a>
-            <a href=""><img src="./img/twitter.png" width="20" alt="" /></a>
+            <a href=""><img src="./img/instagram.png" width="30" alt="" /></a>
+            <a href=""><img src="./img/facebook.png" width="30" alt="" /></a>
+            <a href=""><img src="./img/twitter.png" width="30" alt="" /></a>
           </div>
         </div>
       </div>

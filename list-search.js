@@ -46,9 +46,9 @@ const getSearchArticles = async (URL) => {
         <hr />
         <div class="span8 d-flex">
           <div class="w-100">
-            <a href="./isi-article.html"><b>${item.judul}</b>
+            <a href=./isi-article.html?id=${item.id}><b>${item.judul}</b>
           </a>
-            <p><a href="./index.html"><span>Tanyadokter.com,</span></a><p class="text">${item.isi_artikel1}</p></p>
+            <p><a href="./index.html"><span>Tanyadokter.com,</span></a><p class="text">${item.isi_artikel1}</p>
             <hr>
           </div>
         </div>`;
