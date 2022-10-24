@@ -3,7 +3,7 @@ const getSearchArticles = async (URL) => {
     const response = await fetch(URL);
     const articles = await response.json();
     let html = ``;
-  
+
     articles.forEach((item, index) => {
       let htmlList = 
       `<strong>Menampilkan hasil untuk <span style="color: orange;">${inputSearch.value}</span>  : </strong>    
