@@ -3,9 +3,11 @@ const inputSearch = document.querySelector("#search")
 const form = document.querySelector("#form")
 const sList = document.querySelector('.search-list')
 
-let getDataArtikel = async (result,index) =>{
-    let response = await fetch("https://6354c808ccce2f8c020d4f4b.mockapi.io/artikel4")
-    let artikel = await response.json()
+// let getDataArtikel = async (result, index) => {
+//   let response = await fetch(
+//     "https://634d5f1bf5d2cc648ea441d9.mockapi.io/articles"
+//   );
+//   let artikel = await response.json();
 
     artikel.forEach(item => {
         containerArtikel.innerHTML += `
@@ -20,7 +22,6 @@ let getDataArtikel = async (result,index) =>{
         <br>
         `
     })
-}
 getDataArtikel()
 
 // Article Search List Start
