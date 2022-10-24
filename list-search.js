@@ -4,7 +4,6 @@ const inputSearch = document.querySelector("#search");
 const form = document.querySelector("#form");
 const API_URL = "https://634d5f1bf5d2cc648ea441d9.mockapi.io/articles";
 
-
 // Article List Start
 const getDataArticles = async (URL) => {
   const response = await fetch(URL);
@@ -29,7 +28,7 @@ const getDataArticles = async (URL) => {
           <p class="text-black-50">${item.kategori}, ${item.tanggal}</p>
           <p class="text">${item.isi_artikel1}</p>
           <div>
-            <div class="more label"><a href="./isi-artikel.html">Read more</a></div>
+            <div class="more label"><a href="./isi-article.html">Read more</a></div>
           </div>
           <hr />
         </div>
@@ -50,7 +49,7 @@ const getSearchArticles = async (URL) => {
         <hr />
         <div class="span8 d-flex">
           <div class="w-100">
-            <a href="./isi-artikel.html"><b>${item.judul}</b>
+            <a href="./isi-article.html"><b>${item.judul}</b>
           </a>
             <p><a href="./index.html"><span>Tanyadokter.com,</span></a><p class="text">${item.isi_artikel1}</p></p>
             <hr>
